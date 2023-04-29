@@ -3,9 +3,6 @@
     "Pedro_Ximenez" : {
       "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Pedro_Ximenez"
     },
-    "versionInfo" : {
-      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
-    },
     "license" : {
       "@id" : "http://purl.org/dc/terms/license"
     },

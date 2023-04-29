@@ -1,8 +1,8 @@
 <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2> <http://creativecommons.org/ns#license> "http://creativecommons.org/licenses/by/4.0" .
 <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2> <http://purl.org/dc/elements/1.1/creator> "Joan Manuel Capera Garcia"@en .
-<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2> <http://purl.org/dc/elements/1.1/license> "http://creativecommons.org/licenses/by/4.0"@en .
 <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2> <http://www.w3.org/2000/01/rdf-schema#label> "Ontologia de vins PAC 2"@en .
-<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2> <http://www.w3.org/2002/07/owl#versionInfo> "Version release: 5.0" .
 # 
 # 
 # #################################################################

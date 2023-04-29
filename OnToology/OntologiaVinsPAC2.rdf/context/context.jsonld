@@ -1,0 +1,137 @@
+{
+  "@context" : {
+    "Pedro_Ximenez" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Pedro_Ximenez"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "belongs" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#belongs",
+      "@type" : "@id"
+    },
+    "Sauvignon_Blanc" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sauvignon_Blanc"
+    },
+    "country" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#country"
+    },
+    "body" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#body"
+    },
+    "wine" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine"
+    },
+    "Mencia" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Mencia"
+    },
+    "Cabernet_Sauvignon" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Cabernet_Sauvignon"
+    },
+    "Syrah" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Syrah"
+    },
+    "elaboratedBy" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#elaboratedBy",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "residesIn" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#residesIn",
+      "@type" : "@id"
+    },
+    "Rioja_White" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja_White"
+    },
+    "Montsant_Red" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Montsant_Red"
+    },
+    "Ribera_Del_Duero_Red" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Ribera_Del_Duero_Red"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "winery" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#winery"
+    },
+    "Monastrell" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Monastrell"
+    },
+    "Sherry" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sherry"
+    },
+    "Grenache" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Grenache"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/elements/1.1/rights"
+    },
+    "region" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#region"
+    },
+    "acidity" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#acidity"
+    },
+    "Rioja_Red" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja_Red"
+    },
+    "Red" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Red"
+    },
+    "Tempranillo" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Tempranillo"
+    },
+    "year" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#year",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Toro_Red" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Toro_Red"
+    },
+    "Priorat_Red" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Priorat_Red"
+    },
+    "Verdejo" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Verdejo"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "price" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#price",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "rating" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#rating",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "num_reviews" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#num_reviews",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Sparkling" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sparkling"
+    },
+    "Cava" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Cava"
+    },
+    "Chardonnay" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Chardonnay"
+    },
+    "Albarino" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Albarino"
+    },
+    "NA" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#NA"
+    }
+  }
+}

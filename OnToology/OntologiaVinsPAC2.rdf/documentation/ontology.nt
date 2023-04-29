@@ -1,0 +1,467 @@
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2> <http://purl.org/dc/elements/1.1/creator> "Joan Manuel Capera Garcia"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2> <http://www.w3.org/2000/01/rdf-schema#label> "Ontologia de vins PAC 2"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2> <http://www.w3.org/2002/07/owl#versionInfo> "Version release: 5.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#belongs
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#belongs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#belongs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#region> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#belongs> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#country> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#belongs> <http://www.w3.org/2000/01/rdf-schema#comment> "Region belongs to country"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#belongs> <http://www.w3.org/2000/01/rdf-schema#label> "Belongs"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#elaboratedBy
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#elaboratedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#elaboratedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#elaboratedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#winery> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#elaboratedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "wine is elaborated by winery"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#elaboratedBy> <http://www.w3.org/2000/01/rdf-schema#label> "ElaboratedBy"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#residesIn
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#residesIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#residesIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#winery> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#residesIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#region> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#residesIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Where it is located" .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#residesIn> <http://www.w3.org/2000/01/rdf-schema#label> "ResidesIn"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#acidity
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#acidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#acidity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#acidity> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#oneOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NA" .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "3" .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "2" .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#acidity> <http://www.w3.org/2000/01/rdf-schema#comment> "Acidity scale"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#acidity> <http://www.w3.org/2000/01/rdf-schema#label> "Acidity"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#body
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#body> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#body> <http://www.w3.org/2000/01/rdf-schema#range> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#oneOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "NA" .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "5" .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "4" .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "3" .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#body> <http://www.w3.org/2000/01/rdf-schema#comment> "Body Scale" .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#body> <http://www.w3.org/2000/01/rdf-schema#label> "Body"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#num_reviews
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#num_reviews> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#num_reviews> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#num_reviews> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#num_reviews> <http://www.w3.org/2000/01/rdf-schema#comment> "How many reviews"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#num_reviews> <http://www.w3.org/2000/01/rdf-schema#label> "Num_Reviews"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#price
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#price> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#price> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#price> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#price> <http://www.w3.org/2000/01/rdf-schema#comment> "sell price"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#price> <http://www.w3.org/2000/01/rdf-schema#label> "Price"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#rating
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#rating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#rating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#rating> <http://www.w3.org/2000/01/rdf-schema#comment> "average review rating"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#rating> <http://www.w3.org/2000/01/rdf-schema#label> "Rating"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#year
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#year> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#year> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#year> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#year> <http://www.w3.org/2000/01/rdf-schema#comment> "year of production"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#year> <http://www.w3.org/2000/01/rdf-schema#label> "Year"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Albarino
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Albarino> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Albarino> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Albarino> <http://www.w3.org/2000/01/rdf-schema#comment> "white from north portugal and Galicia"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Albarino> <http://www.w3.org/2000/01/rdf-schema#label> "Albarino"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Cabernet_Sauvignon
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Cabernet_Sauvignon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Cabernet_Sauvignon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Cabernet_Sauvignon> <http://www.w3.org/2000/01/rdf-schema#comment> "Red grape, most common" .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Cabernet_Sauvignon> <http://www.w3.org/2000/01/rdf-schema#label> "Cabernet Sauvignon"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Cava
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Cava> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Cava> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Cava> <http://www.w3.org/2000/01/rdf-schema#comment> "White or rose from catalunya"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Cava> <http://www.w3.org/2000/01/rdf-schema#label> "Cava"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Chardonnay
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Chardonnay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Chardonnay> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Chardonnay> <http://www.w3.org/2000/01/rdf-schema#comment> "white from burgundy"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Chardonnay> <http://www.w3.org/2000/01/rdf-schema#label> "Chardonnay"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Grenache
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Grenache> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Grenache> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Grenache> <http://www.w3.org/2000/01/rdf-schema#comment> "red spanish origin"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Grenache> <http://www.w3.org/2000/01/rdf-schema#label> "Grenache"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Mencia
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Mencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Mencia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Mencia> <http://www.w3.org/2000/01/rdf-schema#comment> "red western iberina peninsula"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Mencia> <http://www.w3.org/2000/01/rdf-schema#label> "Mencia"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Monastrell
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Monastrell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Monastrell> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Monastrell> <http://www.w3.org/2000/01/rdf-schema#comment> "red high in alcohol"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Monastrell> <http://www.w3.org/2000/01/rdf-schema#label> "Monastrell"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Montsant_Red
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Montsant_Red> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Montsant_Red> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Montsant_Red> <http://www.w3.org/2000/01/rdf-schema#comment> "red catalan"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Montsant_Red> <http://www.w3.org/2000/01/rdf-schema#label> "Montsant red"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#NA
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#NA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#NA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#NA> <http://www.w3.org/2000/01/rdf-schema#comment> "Unknown"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#NA> <http://www.w3.org/2000/01/rdf-schema#label> "NA"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Pedro_Ximenez
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Pedro_Ximenez> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Pedro_Ximenez> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Pedro_Ximenez> <http://www.w3.org/2000/01/rdf-schema#comment> "white south spain"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Pedro_Ximenez> <http://www.w3.org/2000/01/rdf-schema#label> "Pedro Ximenez"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Priorat_Red
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Priorat_Red> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Priorat_Red> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Priorat_Red> <http://www.w3.org/2000/01/rdf-schema#comment> "red catalan"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Priorat_Red> <http://www.w3.org/2000/01/rdf-schema#label> "Priorat Red"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Red
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Red> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Red> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Red> <http://www.w3.org/2000/01/rdf-schema#comment> "red generic"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Red> <http://www.w3.org/2000/01/rdf-schema#label> "Red"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Ribera_Del_Duero_Red
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Ribera_Del_Duero_Red> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Ribera_Del_Duero_Red> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Ribera_Del_Duero_Red> <http://www.w3.org/2000/01/rdf-schema#comment> "red DO ribera del duero"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Ribera_Del_Duero_Red> <http://www.w3.org/2000/01/rdf-schema#label> "Ribera del Duero Red"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja_Red
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja_Red> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja_Red> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja_Red> <http://www.w3.org/2000/01/rdf-schema#comment> "red DO rioja"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja_Red> <http://www.w3.org/2000/01/rdf-schema#label> "Rioja Red"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja_White
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja_White> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja_White> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja_White> <http://www.w3.org/2000/01/rdf-schema#comment> "white DO rioja"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja_White> <http://www.w3.org/2000/01/rdf-schema#label> "Rioja White"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sauvignon_Blanc
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sauvignon_Blanc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sauvignon_Blanc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sauvignon_Blanc> <http://www.w3.org/2000/01/rdf-schema#comment> "white cabernet sauvignon grape"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sauvignon_Blanc> <http://www.w3.org/2000/01/rdf-schema#label> "Sauvignon Blanc"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sherry
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sherry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sherry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sherry> <http://www.w3.org/2000/01/rdf-schema#comment> "white dry"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sherry> <http://www.w3.org/2000/01/rdf-schema#label> "Sherry"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sparkling
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sparkling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sparkling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sparkling> <http://www.w3.org/2000/01/rdf-schema#comment> "white with bubbles"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sparkling> <http://www.w3.org/2000/01/rdf-schema#label> "Sparkling"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Syrah
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Syrah> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Syrah> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Syrah> <http://www.w3.org/2000/01/rdf-schema#comment> "red france southeast"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Syrah> <http://www.w3.org/2000/01/rdf-schema#label> "Syrah"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Tempranillo
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Tempranillo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Tempranillo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Tempranillo> <http://www.w3.org/2000/01/rdf-schema#comment> "red spanish"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Tempranillo> <http://www.w3.org/2000/01/rdf-schema#label> "Tempranillo"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Toro_Red
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Toro_Red> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Toro_Red> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Toro_Red> <http://www.w3.org/2000/01/rdf-schema#comment> "DO zamora"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Toro_Red> <http://www.w3.org/2000/01/rdf-schema#label> "Toro Red"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Verdejo
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Verdejo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Verdejo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Verdejo> <http://www.w3.org/2000/01/rdf-schema#comment> "white castilla y leon"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Verdejo> <http://www.w3.org/2000/01/rdf-schema#label> "Verdejo"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#country
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#country> <http://www.w3.org/2000/01/rdf-schema#comment> "Origin country"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#country> <http://www.w3.org/2000/01/rdf-schema#label> "Country"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#country> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/country"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#region
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#country> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#region> <http://www.w3.org/2000/01/rdf-schema#comment> "Region where the wine is made."@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#region> <http://www.w3.org/2000/01/rdf-schema#label> "Region"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> <http://www.w3.org/2000/01/rdf-schema#comment> "From grapes"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> <http://www.w3.org/2000/01/rdf-schema#label> "wine" .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Wine"@en .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#winery
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#winery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#winery> <http://www.w3.org/2000/01/rdf-schema#comment> "Organization that produes wine"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#winery> <http://www.w3.org/2000/01/rdf-schema#label> "Winery"@en .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#winery> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Winery"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#España
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#España> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#España> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#country> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Gran_Reserva_890_1985
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Gran_Reserva_890_1985> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Gran_Reserva_890_1985> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja_Red> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Gran_Reserva_890_1985> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#elaboratedBy> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#La_Rioja_Alta> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Gran_Reserva_890_1985> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#acidity> "3" .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Gran_Reserva_890_1985> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#body> "4" .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Gran_Reserva_890_1985> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#num_reviews> "26"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Gran_Reserva_890_1985> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#price> "215.34"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Gran_Reserva_890_1985> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#rating> "4.8"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Gran_Reserva_890_1985> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#year> "1985"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Gran_Vino_Albarino_2019
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Gran_Vino_Albarino_2019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Gran_Vino_Albarino_2019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Albarino> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Gran_Vino_Albarino_2019> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#elaboratedBy> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Pazo_Barrantes> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Gran_Vino_Albarino_2019> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#acidity> "3" .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Gran_Vino_Albarino_2019> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#body> "3" .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Gran_Vino_Albarino_2019> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#num_reviews> "188"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Gran_Vino_Albarino_2019> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#price> "34.9"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Gran_Vino_Albarino_2019> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#rating> "4.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Gran_Vino_Albarino_2019> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#year> "2019"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Jumilla
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Jumilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Jumilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#region> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Jumilla> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#belongs> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#España> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#La_Rioja_Alta
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#La_Rioja_Alta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#La_Rioja_Alta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#winery> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#La_Rioja_Alta> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#residesIn> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Pazo_Barrantes
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Pazo_Barrantes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Pazo_Barrantes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#winery> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rias_Baixas
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rias_Baixas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rias_Baixas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#region> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rias_Baixas> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#belongs> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#España> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Ribera_del_Duero
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Ribera_del_Duero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Ribera_del_Duero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#region> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Ribera_del_Duero> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#belongs> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#España> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#region> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#belongs> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#España> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Toro
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Toro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Toro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#region> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Toro> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#belongs> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#España> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Unico_2009
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Unico_2009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Unico_2009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Ribera_Del_Duero_Red> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Unico_2009> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#elaboratedBy> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Vega_Sicilia> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Unico_2009> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#acidity> "3" .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Unico_2009> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#body> "5" .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Unico_2009> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#num_reviews> "1793"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Unico_2009> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#price> "324.95"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Unico_2009> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#rating> "4.8"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Unico_2009> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#year> "2009"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Vega_Sicilia
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Vega_Sicilia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Vega_Sicilia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#winery> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Vega_Sicilia> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#residesIn> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Ribera_del_Duero> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid10 <http://www.w3.org/2002/07/owl#members> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Verdejo> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Toro_Red> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Tempranillo> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Syrah> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sparkling> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sherry> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sauvignon_Blanc> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja_White> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja_Red> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Ribera_Del_Duero_Red> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Red> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Priorat_Red> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Pedro_Ximenez> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#NA> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Montsant_Red> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Monastrell> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Mencia> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Grenache> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Chardonnay> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Cava> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Cabernet_Sauvignon> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Albarino> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

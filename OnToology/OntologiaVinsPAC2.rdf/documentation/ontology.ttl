@@ -1,0 +1,457 @@
+@prefix : <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#> .
+
+<http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2> rdf:type owl:Ontology ;
+                                                                       <http://purl.org/dc/elements/1.1/creator> "Joan Manuel Capera Garcia"@en ;
+                                                                       <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" ;
+                                                                       rdfs:label "Ontologia de vins PAC 2"@en ;
+                                                                       owl:versionInfo "Version release: 5.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#belongs
+:belongs rdf:type owl:ObjectProperty ;
+         rdfs:domain :region ;
+         rdfs:range :country ;
+         rdfs:comment "Region belongs to country"@en ;
+         rdfs:label "Belongs"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#elaboratedBy
+:elaboratedBy rdf:type owl:ObjectProperty ;
+              rdfs:domain :wine ;
+              rdfs:range :winery ;
+              rdfs:comment "wine is elaborated by winery"@en ;
+              rdfs:label "ElaboratedBy"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#residesIn
+:residesIn rdf:type owl:ObjectProperty ;
+           rdfs:domain :winery ;
+           rdfs:range :region ;
+           rdfs:comment "Where it is located" ;
+           rdfs:label "ResidesIn"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#acidity
+:acidity rdf:type owl:DatatypeProperty ;
+         rdfs:domain :wine ;
+         rdfs:range [ rdf:type rdfs:Datatype ;
+                      owl:oneOf [ rdf:type rdf:List ;
+                                  rdf:first "2" ;
+                                  rdf:rest [ rdf:type rdf:List ;
+                                             rdf:first "3" ;
+                                             rdf:rest [ rdf:type rdf:List ;
+                                                        rdf:first "NA" ;
+                                                        rdf:rest rdf:nil
+                                                      ]
+                                           ]
+                                ]
+                    ] ;
+         rdfs:comment "Acidity scale"@en ;
+         rdfs:label "Acidity"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#body
+:body rdf:type owl:DatatypeProperty ;
+      rdfs:domain :wine ;
+      rdfs:range [ rdf:type rdfs:Datatype ;
+                   owl:oneOf [ rdf:type rdf:List ;
+                               rdf:first "3" ;
+                               rdf:rest [ rdf:type rdf:List ;
+                                          rdf:first "4" ;
+                                          rdf:rest [ rdf:type rdf:List ;
+                                                     rdf:first "5" ;
+                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                rdf:first "NA" ;
+                                                                rdf:rest rdf:nil
+                                                              ]
+                                                   ]
+                                        ]
+                             ]
+                 ] ;
+      rdfs:comment "Body Scale" ;
+      rdfs:label "Body"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#num_reviews
+:num_reviews rdf:type owl:DatatypeProperty ;
+             rdfs:domain :wine ;
+             rdfs:range xsd:integer ;
+             rdfs:comment "How many reviews"@en ;
+             rdfs:label "Num_Reviews"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#price
+:price rdf:type owl:DatatypeProperty ;
+       rdfs:domain :wine ;
+       rdfs:range xsd:decimal ;
+       rdfs:comment "sell price"@en ;
+       rdfs:label "Price"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#rating
+:rating rdf:type owl:DatatypeProperty ;
+        rdfs:domain :wine ;
+        rdfs:range xsd:decimal ;
+        rdfs:comment "average review rating"@en ;
+        rdfs:label "Rating"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#year
+:year rdf:type owl:DatatypeProperty ;
+      rdfs:domain :wine ;
+      rdfs:range xsd:integer ;
+      rdfs:comment "year of production"@en ;
+      rdfs:label "Year"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Albarino
+:Albarino rdf:type owl:Class ;
+          rdfs:subClassOf :wine ;
+          rdfs:comment "white from north portugal and Galicia"@en ;
+          rdfs:label "Albarino"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Cabernet_Sauvignon
+:Cabernet_Sauvignon rdf:type owl:Class ;
+                    rdfs:subClassOf :wine ;
+                    rdfs:comment "Red grape, most common" ;
+                    rdfs:label "Cabernet Sauvignon"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Cava
+:Cava rdf:type owl:Class ;
+      rdfs:subClassOf :wine ;
+      rdfs:comment "White or rose from catalunya"@en ;
+      rdfs:label "Cava"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Chardonnay
+:Chardonnay rdf:type owl:Class ;
+            rdfs:subClassOf :wine ;
+            rdfs:comment "white from burgundy"@en ;
+            rdfs:label "Chardonnay"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Grenache
+:Grenache rdf:type owl:Class ;
+          rdfs:subClassOf :wine ;
+          rdfs:comment "red spanish origin"@en ;
+          rdfs:label "Grenache"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Mencia
+:Mencia rdf:type owl:Class ;
+        rdfs:subClassOf :wine ;
+        rdfs:comment "red western iberina peninsula"@en ;
+        rdfs:label "Mencia"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Monastrell
+:Monastrell rdf:type owl:Class ;
+            rdfs:subClassOf :wine ;
+            rdfs:comment "red high in alcohol"@en ;
+            rdfs:label "Monastrell"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Montsant_Red
+:Montsant_Red rdf:type owl:Class ;
+              rdfs:subClassOf :wine ;
+              rdfs:comment "red catalan"@en ;
+              rdfs:label "Montsant red"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#NA
+:NA rdf:type owl:Class ;
+    rdfs:subClassOf :wine ;
+    rdfs:comment "Unknown"@en ;
+    rdfs:label "NA"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Pedro_Ximenez
+:Pedro_Ximenez rdf:type owl:Class ;
+               rdfs:subClassOf :wine ;
+               rdfs:comment "white south spain"@en ;
+               rdfs:label "Pedro Ximenez"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Priorat_Red
+:Priorat_Red rdf:type owl:Class ;
+             rdfs:subClassOf :wine ;
+             rdfs:comment "red catalan"@en ;
+             rdfs:label "Priorat Red"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Red
+:Red rdf:type owl:Class ;
+     rdfs:subClassOf :wine ;
+     rdfs:comment "red generic"@en ;
+     rdfs:label "Red"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Ribera_Del_Duero_Red
+:Ribera_Del_Duero_Red rdf:type owl:Class ;
+                      rdfs:subClassOf :wine ;
+                      rdfs:comment "red DO ribera del duero"@en ;
+                      rdfs:label "Ribera del Duero Red"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja_Red
+:Rioja_Red rdf:type owl:Class ;
+           rdfs:subClassOf :wine ;
+           rdfs:comment "red DO rioja"@en ;
+           rdfs:label "Rioja Red"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja_White
+:Rioja_White rdf:type owl:Class ;
+             rdfs:subClassOf :wine ;
+             rdfs:comment "white DO rioja"@en ;
+             rdfs:label "Rioja White"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sauvignon_Blanc
+:Sauvignon_Blanc rdf:type owl:Class ;
+                 rdfs:subClassOf :wine ;
+                 rdfs:comment "white cabernet sauvignon grape"@en ;
+                 rdfs:label "Sauvignon Blanc"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sherry
+:Sherry rdf:type owl:Class ;
+        rdfs:subClassOf :wine ;
+        rdfs:comment "white dry"@en ;
+        rdfs:label "Sherry"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sparkling
+:Sparkling rdf:type owl:Class ;
+           rdfs:subClassOf :wine ;
+           rdfs:comment "white with bubbles"@en ;
+           rdfs:label "Sparkling"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Syrah
+:Syrah rdf:type owl:Class ;
+       rdfs:subClassOf :wine ;
+       rdfs:comment "red france southeast"@en ;
+       rdfs:label "Syrah"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Tempranillo
+:Tempranillo rdf:type owl:Class ;
+             rdfs:subClassOf :wine ;
+             rdfs:comment "red spanish"@en ;
+             rdfs:label "Tempranillo"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Toro_Red
+:Toro_Red rdf:type owl:Class ;
+          rdfs:subClassOf :wine ;
+          rdfs:comment "DO zamora"@en ;
+          rdfs:label "Toro Red"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Verdejo
+:Verdejo rdf:type owl:Class ;
+         rdfs:subClassOf :wine ;
+         rdfs:comment "white castilla y leon"@en ;
+         rdfs:label "Verdejo"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#country
+:country rdf:type owl:Class ;
+         rdfs:comment "Origin country"@en ;
+         rdfs:label "Country"@en ;
+         rdfs:sameAs "https://dbpedia.org/ontology/country"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#region
+:region rdf:type owl:Class ;
+        rdfs:subClassOf :country ;
+        rdfs:comment "Region where the wine is made."@en ;
+        rdfs:label "Region"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine
+:wine rdf:type owl:Class ;
+      rdfs:comment "From grapes"@en ;
+      rdfs:label "wine" ;
+      rdfs:sameAs "https://dbpedia.org/page/Wine"@en .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#winery
+:winery rdf:type owl:Class ;
+        rdfs:comment "Organization that produes wine"@en ;
+        rdfs:label "Winery"@en ;
+        rdfs:sameAs "https://dbpedia.org/page/Winery"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#España
+:España rdf:type owl:NamedIndividual ,
+                 :country .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Gran_Reserva_890_1985
+:Gran_Reserva_890_1985 rdf:type owl:NamedIndividual ,
+                                :Rioja_Red ;
+                       :elaboratedBy :La_Rioja_Alta ;
+                       :acidity "3" ;
+                       :body "4" ;
+                       :num_reviews 26 ;
+                       :price 215.34 ;
+                       :rating 4.8 ;
+                       :year 1985 .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Gran_Vino_Albarino_2019
+:Gran_Vino_Albarino_2019 rdf:type owl:NamedIndividual ,
+                                  :Albarino ;
+                         :elaboratedBy :Pazo_Barrantes ;
+                         :acidity "3" ;
+                         :body "3" ;
+                         :num_reviews 188 ;
+                         :price 34.9 ;
+                         :rating 4.5 ;
+                         :year 2019 .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Jumilla
+:Jumilla rdf:type owl:NamedIndividual ,
+                  :region ;
+         :belongs :España .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#La_Rioja_Alta
+:La_Rioja_Alta rdf:type owl:NamedIndividual ,
+                        :winery ;
+               :residesIn :Rioja .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Pazo_Barrantes
+:Pazo_Barrantes rdf:type owl:NamedIndividual ,
+                         :winery .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rias_Baixas
+:Rias_Baixas rdf:type owl:NamedIndividual ,
+                      :region ;
+             :belongs :España .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Ribera_del_Duero
+:Ribera_del_Duero rdf:type owl:NamedIndividual ,
+                           :region ;
+                  :belongs :España .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja
+:Rioja rdf:type owl:NamedIndividual ,
+                :region ;
+       :belongs :España .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Toro
+:Toro rdf:type owl:NamedIndividual ,
+               :region ;
+      :belongs :España .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Unico_2009
+:Unico_2009 rdf:type owl:NamedIndividual ,
+                     :Ribera_Del_Duero_Red ;
+            :elaboratedBy :Vega_Sicilia ;
+            :acidity "3" ;
+            :body "5" ;
+            :num_reviews 1793 ;
+            :price 324.95 ;
+            :rating 4.8 ;
+            :year 2009 .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Vega_Sicilia
+:Vega_Sicilia rdf:type owl:NamedIndividual ,
+                       :winery ;
+              :residesIn :Ribera_del_Duero .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Albarino
+                :Cabernet_Sauvignon
+                :Cava
+                :Chardonnay
+                :Grenache
+                :Mencia
+                :Monastrell
+                :Montsant_Red
+                :NA
+                :Pedro_Ximenez
+                :Priorat_Red
+                :Red
+                :Ribera_Del_Duero_Red
+                :Rioja_Red
+                :Rioja_White
+                :Sauvignon_Blanc
+                :Sherry
+                :Sparkling
+                :Syrah
+                :Tempranillo
+                :Toro_Red
+                :Verdejo
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

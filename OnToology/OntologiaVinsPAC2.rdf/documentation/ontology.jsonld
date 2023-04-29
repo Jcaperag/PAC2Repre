@@ -92,19 +92,20 @@
 }, {
   "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://creativecommons.org/ns#license" : [ {
+    "@value" : "http://creativecommons.org/licenses/by/4.0"
+  } ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@language" : "en",
     "@value" : "Joan Manuel Capera Garcia"
   } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@value" : "https://creativecommons.org/licenses/by/4.0/"
+  "http://purl.org/dc/elements/1.1/license" : [ {
+    "@language" : "en",
+    "@value" : "http://creativecommons.org/licenses/by/4.0"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Ontologia de vins PAC 2"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "Version release: 5.0"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Albarino",

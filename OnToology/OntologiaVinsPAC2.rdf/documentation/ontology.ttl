@@ -7,10 +7,10 @@
 @base <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#> .
 
 <http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2> rdf:type owl:Ontology ;
+                                                                       <http://creativecommons.org/ns#license> "http://creativecommons.org/licenses/by/4.0" ;
                                                                        <http://purl.org/dc/elements/1.1/creator> "Joan Manuel Capera Garcia"@en ;
-                                                                       <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" ;
-                                                                       rdfs:label "Ontologia de vins PAC 2"@en ;
-                                                                       owl:versionInfo "Version release: 5.0" .
+                                                                       <http://purl.org/dc/elements/1.1/license> "http://creativecommons.org/licenses/by/4.0"@en ;
+                                                                       rdfs:label "Ontologia de vins PAC 2"@en .
 
 #################################################################
 #    Annotation properties

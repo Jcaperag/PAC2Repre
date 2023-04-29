@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#"
-     xml:base="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2"
+<rdf:RDF xmlns="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#"
+     xml:base="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -9,12 +9,13 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:OntologiaVinsPAC2="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2">
+     xmlns:OntologiaVinsPAC2="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#">
+    <owl:Ontology rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2">
         <dc:creator xml:lang="en">Joan Manuel Capera Garcia</dc:creator>
-        <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
+        <dc:license xml:lang="en">http://creativecommons.org/licenses/by/4.0</dc:license>
+        <dc:rights xml:lang="en">http://creativecommons.org/licenses/by/4.0</dc:rights>
         <rdfs:label xml:lang="en">Ontologia de vins PAC 2</rdfs:label>
-        <owl:versionInfo>Version release: 5.0</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">1.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -73,6 +74,13 @@
     
 
 
+    <!-- http://www.w3.org/2002/07/owl#sameAs -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -85,36 +93,36 @@
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#belongs -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#belongs -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#belongs">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#region"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#country"/>
+    <owl:ObjectProperty rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#belongs">
+        <rdfs:domain rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#region"/>
+        <rdfs:range rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#country"/>
         <rdfs:comment xml:lang="en">Region belongs to country</rdfs:comment>
         <rdfs:label xml:lang="en">Belongs</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#elaboratedBy -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#elaboratedBy -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#elaboratedBy">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#winery"/>
+    <owl:ObjectProperty rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#elaboratedBy">
+        <rdfs:domain rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine"/>
+        <rdfs:range rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#winery"/>
         <rdfs:comment xml:lang="en">wine is elaborated by winery</rdfs:comment>
         <rdfs:label xml:lang="en">ElaboratedBy</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#residesIn -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#residesIn -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#residesIn">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#winery"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#region"/>
+    <owl:ObjectProperty rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#residesIn">
+        <rdfs:domain rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#winery"/>
+        <rdfs:range rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#region"/>
         <rdfs:comment>Where it is located</rdfs:comment>
         <rdfs:label xml:lang="en">ResidesIn</rdfs:label>
     </owl:ObjectProperty>
@@ -133,11 +141,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#acidity -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#acidity -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#acidity">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine"/>
+    <owl:DatatypeProperty rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#acidity">
+        <rdfs:domain rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:oneOf>
@@ -167,11 +175,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#body -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#body -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#body">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine"/>
+    <owl:DatatypeProperty rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#body">
+        <rdfs:domain rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:oneOf>
@@ -207,11 +215,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#num_reviews -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#num_reviews -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#num_reviews">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine"/>
+    <owl:DatatypeProperty rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#num_reviews">
+        <rdfs:domain rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment xml:lang="en">How many reviews</rdfs:comment>
         <rdfs:label xml:lang="en">Num_Reviews</rdfs:label>
@@ -219,11 +227,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#price -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#price -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#price">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine"/>
+    <owl:DatatypeProperty rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#price">
+        <rdfs:domain rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <rdfs:comment xml:lang="en">sell price</rdfs:comment>
         <rdfs:label xml:lang="en">Price</rdfs:label>
@@ -231,11 +239,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#rating -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#rating -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#rating">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine"/>
+    <owl:DatatypeProperty rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#rating">
+        <rdfs:domain rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <rdfs:comment xml:lang="en">average review rating</rdfs:comment>
         <rdfs:label xml:lang="en">Rating</rdfs:label>
@@ -243,11 +251,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#year -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#year -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#year">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine"/>
+    <owl:DatatypeProperty rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#year">
+        <rdfs:domain rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment xml:lang="en">year of production</rdfs:comment>
         <rdfs:label xml:lang="en">Year</rdfs:label>
@@ -267,288 +275,288 @@
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Albarino -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Albarino -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Albarino">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine"/>
+    <owl:Class rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Albarino">
+        <rdfs:subClassOf rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine"/>
         <rdfs:comment xml:lang="en">white from north portugal and Galicia</rdfs:comment>
         <rdfs:label xml:lang="en">Albarino</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Cabernet_Sauvignon -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Cabernet_Sauvignon -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Cabernet_Sauvignon">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine"/>
+    <owl:Class rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Cabernet_Sauvignon">
+        <rdfs:subClassOf rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine"/>
         <rdfs:comment>Red grape, most common</rdfs:comment>
         <rdfs:label xml:lang="en">Cabernet Sauvignon</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Cava -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Cava -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Cava">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine"/>
+    <owl:Class rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Cava">
+        <rdfs:subClassOf rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine"/>
         <rdfs:comment xml:lang="en">White or rose from catalunya</rdfs:comment>
         <rdfs:label xml:lang="en">Cava</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Chardonnay -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Chardonnay -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Chardonnay">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine"/>
+    <owl:Class rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Chardonnay">
+        <rdfs:subClassOf rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine"/>
         <rdfs:comment xml:lang="en">white from burgundy</rdfs:comment>
         <rdfs:label xml:lang="en">Chardonnay</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Grenache -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Grenache -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Grenache">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine"/>
+    <owl:Class rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Grenache">
+        <rdfs:subClassOf rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine"/>
         <rdfs:comment xml:lang="en">red spanish origin</rdfs:comment>
         <rdfs:label xml:lang="en">Grenache</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Mencia -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Mencia -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Mencia">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine"/>
+    <owl:Class rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Mencia">
+        <rdfs:subClassOf rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine"/>
         <rdfs:comment xml:lang="en">red western iberina peninsula</rdfs:comment>
         <rdfs:label xml:lang="en">Mencia</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Monastrell -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Monastrell -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Monastrell">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine"/>
+    <owl:Class rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Monastrell">
+        <rdfs:subClassOf rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine"/>
         <rdfs:comment xml:lang="en">red high in alcohol</rdfs:comment>
         <rdfs:label xml:lang="en">Monastrell</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Montsant_Red -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Montsant_Red -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Montsant_Red">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine"/>
+    <owl:Class rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Montsant_Red">
+        <rdfs:subClassOf rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine"/>
         <rdfs:comment xml:lang="en">red catalan</rdfs:comment>
         <rdfs:label xml:lang="en">Montsant red</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#NA -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#NA -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#NA">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine"/>
+    <owl:Class rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#NA">
+        <rdfs:subClassOf rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine"/>
         <rdfs:comment xml:lang="en">Unknown</rdfs:comment>
         <rdfs:label xml:lang="en">NA</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Pedro_Ximenez -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Pedro_Ximenez -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Pedro_Ximenez">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine"/>
+    <owl:Class rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Pedro_Ximenez">
+        <rdfs:subClassOf rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine"/>
         <rdfs:comment xml:lang="en">white south spain</rdfs:comment>
         <rdfs:label xml:lang="en">Pedro Ximenez</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Priorat_Red -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Priorat_Red -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Priorat_Red">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine"/>
+    <owl:Class rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Priorat_Red">
+        <rdfs:subClassOf rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine"/>
         <rdfs:comment xml:lang="en">red catalan</rdfs:comment>
         <rdfs:label xml:lang="en">Priorat Red</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Red -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Red -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Red">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine"/>
+    <owl:Class rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Red">
+        <rdfs:subClassOf rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine"/>
         <rdfs:comment xml:lang="en">red generic</rdfs:comment>
         <rdfs:label xml:lang="en">Red</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Ribera_Del_Duero_Red -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Ribera_Del_Duero_Red -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Ribera_Del_Duero_Red">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine"/>
+    <owl:Class rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Ribera_Del_Duero_Red">
+        <rdfs:subClassOf rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine"/>
         <rdfs:comment xml:lang="en">red DO ribera del duero</rdfs:comment>
         <rdfs:label xml:lang="en">Ribera del Duero Red</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja_Red -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Rioja_Red -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja_Red">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine"/>
+    <owl:Class rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Rioja_Red">
+        <rdfs:subClassOf rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine"/>
         <rdfs:comment xml:lang="en">red DO rioja</rdfs:comment>
         <rdfs:label xml:lang="en">Rioja Red</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja_White -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Rioja_White -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja_White">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine"/>
+    <owl:Class rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Rioja_White">
+        <rdfs:subClassOf rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine"/>
         <rdfs:comment xml:lang="en">white DO rioja</rdfs:comment>
         <rdfs:label xml:lang="en">Rioja White</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sauvignon_Blanc -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Sauvignon_Blanc -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sauvignon_Blanc">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine"/>
+    <owl:Class rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Sauvignon_Blanc">
+        <rdfs:subClassOf rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine"/>
         <rdfs:comment xml:lang="en">white cabernet sauvignon grape</rdfs:comment>
         <rdfs:label xml:lang="en">Sauvignon Blanc</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sherry -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Sherry -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sherry">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine"/>
+    <owl:Class rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Sherry">
+        <rdfs:subClassOf rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine"/>
         <rdfs:comment xml:lang="en">white dry</rdfs:comment>
         <rdfs:label xml:lang="en">Sherry</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sparkling -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Sparkling -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sparkling">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine"/>
+    <owl:Class rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Sparkling">
+        <rdfs:subClassOf rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine"/>
         <rdfs:comment xml:lang="en">white with bubbles</rdfs:comment>
         <rdfs:label xml:lang="en">Sparkling</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Syrah -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Syrah -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Syrah">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine"/>
+    <owl:Class rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Syrah">
+        <rdfs:subClassOf rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine"/>
         <rdfs:comment xml:lang="en">red france southeast</rdfs:comment>
         <rdfs:label xml:lang="en">Syrah</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Tempranillo -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Tempranillo -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Tempranillo">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine"/>
+    <owl:Class rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Tempranillo">
+        <rdfs:subClassOf rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine"/>
         <rdfs:comment xml:lang="en">red spanish</rdfs:comment>
         <rdfs:label xml:lang="en">Tempranillo</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Toro_Red -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Toro_Red -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Toro_Red">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine"/>
+    <owl:Class rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Toro_Red">
+        <rdfs:subClassOf rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine"/>
         <rdfs:comment xml:lang="en">DO zamora</rdfs:comment>
         <rdfs:label xml:lang="en">Toro Red</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Verdejo -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Verdejo -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Verdejo">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine"/>
+    <owl:Class rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Verdejo">
+        <rdfs:subClassOf rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine"/>
         <rdfs:comment xml:lang="en">white castilla y leon</rdfs:comment>
         <rdfs:label xml:lang="en">Verdejo</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#country -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#country -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#country">
+    <owl:Class rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#country">
         <rdfs:comment xml:lang="en">Origin country</rdfs:comment>
         <rdfs:label xml:lang="en">Country</rdfs:label>
-        <rdfs:sameAs xml:lang="en">https://dbpedia.org/ontology/country</rdfs:sameAs>
+        <owl:sameAs xml:lang="en">https://dbpedia.org/page/Country</owl:sameAs>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#region -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#region -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#region">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#country"/>
+    <owl:Class rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#region">
+        <rdfs:subClassOf rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#country"/>
         <rdfs:comment xml:lang="en">Region where the wine is made.</rdfs:comment>
         <rdfs:label xml:lang="en">Region</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#wine">
+    <owl:Class rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#wine">
         <rdfs:comment xml:lang="en">From grapes</rdfs:comment>
         <rdfs:label>wine</rdfs:label>
-        <rdfs:sameAs xml:lang="en">https://dbpedia.org/page/Wine</rdfs:sameAs>
+        <owl:sameAs xml:lang="en">https://dbpedia.org/page/Wine</owl:sameAs>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#winery -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#winery -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#winery">
+    <owl:Class rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#winery">
         <rdfs:comment xml:lang="en">Organization that produes wine</rdfs:comment>
         <rdfs:label xml:lang="en">Winery</rdfs:label>
-        <rdfs:sameAs xml:lang="en">https://dbpedia.org/page/Winery</rdfs:sameAs>
+        <owl:sameAs xml:lang="en">https://dbpedia.org/page/Winery</owl:sameAs>
     </owl:Class>
     
 
@@ -565,21 +573,21 @@
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#España -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#España -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#España">
-        <rdf:type rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#country"/>
+    <owl:NamedIndividual rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#España">
+        <rdf:type rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#country"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Gran_Reserva_890_1985 -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Gran_Reserva_890_1985 -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Gran_Reserva_890_1985">
-        <rdf:type rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja_Red"/>
-        <elaboratedBy rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#La_Rioja_Alta"/>
+    <owl:NamedIndividual rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Gran_Reserva_890_1985">
+        <rdf:type rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Rioja_Red"/>
+        <elaboratedBy rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#La_Rioja_Alta"/>
         <acidity>3</acidity>
         <body>4</body>
         <num_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</num_reviews>
@@ -590,12 +598,12 @@
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Gran_Vino_Albarino_2019 -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Gran_Vino_Albarino_2019 -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Gran_Vino_Albarino_2019">
-        <rdf:type rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Albarino"/>
-        <elaboratedBy rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Pazo_Barrantes"/>
+    <owl:NamedIndividual rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Gran_Vino_Albarino_2019">
+        <rdf:type rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Albarino"/>
+        <elaboratedBy rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Pazo_Barrantes"/>
         <acidity>3</acidity>
         <body>3</body>
         <num_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">188</num_reviews>
@@ -606,81 +614,81 @@
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Jumilla -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Jumilla -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Jumilla">
-        <rdf:type rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#region"/>
-        <belongs rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#España"/>
+    <owl:NamedIndividual rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Jumilla">
+        <rdf:type rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#region"/>
+        <belongs rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#España"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#La_Rioja_Alta -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#La_Rioja_Alta -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#La_Rioja_Alta">
-        <rdf:type rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#winery"/>
-        <residesIn rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja"/>
+    <owl:NamedIndividual rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#La_Rioja_Alta">
+        <rdf:type rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#winery"/>
+        <residesIn rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Rioja"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Pazo_Barrantes -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Pazo_Barrantes -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Pazo_Barrantes">
-        <rdf:type rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#winery"/>
+    <owl:NamedIndividual rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Pazo_Barrantes">
+        <rdf:type rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#winery"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rias_Baixas -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Rias_Baixas -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rias_Baixas">
-        <rdf:type rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#region"/>
-        <belongs rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#España"/>
+    <owl:NamedIndividual rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Rias_Baixas">
+        <rdf:type rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#region"/>
+        <belongs rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#España"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Ribera_del_Duero -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Ribera_del_Duero -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Ribera_del_Duero">
-        <rdf:type rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#region"/>
-        <belongs rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#España"/>
+    <owl:NamedIndividual rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Ribera_del_Duero">
+        <rdf:type rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#region"/>
+        <belongs rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#España"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Rioja -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja">
-        <rdf:type rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#region"/>
-        <belongs rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#España"/>
+    <owl:NamedIndividual rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Rioja">
+        <rdf:type rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#region"/>
+        <belongs rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#España"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Toro -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Toro -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Toro">
-        <rdf:type rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#region"/>
-        <belongs rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#España"/>
+    <owl:NamedIndividual rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Toro">
+        <rdf:type rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#region"/>
+        <belongs rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#España"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Unico_2009 -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Unico_2009 -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Unico_2009">
-        <rdf:type rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Ribera_Del_Duero_Red"/>
-        <elaboratedBy rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Vega_Sicilia"/>
+    <owl:NamedIndividual rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Unico_2009">
+        <rdf:type rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Ribera_Del_Duero_Red"/>
+        <elaboratedBy rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Vega_Sicilia"/>
         <acidity>3</acidity>
         <body>5</body>
         <num_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1793</num_reviews>
@@ -691,12 +699,12 @@
     
 
 
-    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Vega_Sicilia -->
+    <!-- http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Vega_Sicilia -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Vega_Sicilia">
-        <rdf:type rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#winery"/>
-        <residesIn rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Ribera_del_Duero"/>
+    <owl:NamedIndividual rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Vega_Sicilia">
+        <rdf:type rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#winery"/>
+        <residesIn rdf:resource="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Ribera_del_Duero"/>
     </owl:NamedIndividual>
     
 
@@ -713,28 +721,28 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Albarino"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Cabernet_Sauvignon"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Cava"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Chardonnay"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Grenache"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Mencia"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Monastrell"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Montsant_Red"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#NA"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Pedro_Ximenez"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Priorat_Red"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Red"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Ribera_Del_Duero_Red"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja_Red"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Rioja_White"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sauvignon_Blanc"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sherry"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Sparkling"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Syrah"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Tempranillo"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Toro_Red"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/OntologiaVinsPAC2#Verdejo"/>
+            <rdf:Description rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Albarino"/>
+            <rdf:Description rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Cabernet_Sauvignon"/>
+            <rdf:Description rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Cava"/>
+            <rdf:Description rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Chardonnay"/>
+            <rdf:Description rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Grenache"/>
+            <rdf:Description rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Mencia"/>
+            <rdf:Description rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Monastrell"/>
+            <rdf:Description rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Montsant_Red"/>
+            <rdf:Description rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#NA"/>
+            <rdf:Description rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Pedro_Ximenez"/>
+            <rdf:Description rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Priorat_Red"/>
+            <rdf:Description rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Red"/>
+            <rdf:Description rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Ribera_Del_Duero_Red"/>
+            <rdf:Description rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Rioja_Red"/>
+            <rdf:Description rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Rioja_White"/>
+            <rdf:Description rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Sauvignon_Blanc"/>
+            <rdf:Description rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Sherry"/>
+            <rdf:Description rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Sparkling"/>
+            <rdf:Description rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Syrah"/>
+            <rdf:Description rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Tempranillo"/>
+            <rdf:Description rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Toro_Red"/>
+            <rdf:Description rdf:about="http://dev.ecommerceconsultores.com/OntologiaVinsPAC2#Verdejo"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>

@@ -1,29 +1,29 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "OntologiaVinsPAC2:Red" "OntologiaVinsPAC2:NA" "OntologiaVinsPAC2:Grenache" "OntologiaVinsPAC2:country" "OntologiaVinsPAC2:Sparkling" "OntologiaVinsPAC2:Monastrell" "OntologiaVinsPAC2:Pedro_Ximenez" "OntologiaVinsPAC2:Mencia" "OntologiaVinsPAC2:Rioja_White" "OntologiaVinsPAC2:Tempranillo" "OntologiaVinsPAC2:Sherry" "OntologiaVinsPAC2:Montsant_Red" "OntologiaVinsPAC2:Ribera_Del_Duero_Red" "OntologiaVinsPAC2:Chardonnay" "OntologiaVinsPAC2:Syrah" "OntologiaVinsPAC2:region" "OntologiaVinsPAC2:Sauvignon_Blanc" "OntologiaVinsPAC2:Cava" "OntologiaVinsPAC2:Toro_Red" "OntologiaVinsPAC2:Cabernet_Sauvignon" "OntologiaVinsPAC2:Verdejo" "OntologiaVinsPAC2:wine" "OntologiaVinsPAC2:Rioja_Red" "OntologiaVinsPAC2:Albarino" "OntologiaVinsPAC2:Priorat_Red" ; /*classes style*/
-	"OntologiaVinsPAC2:Syrah" -> "OntologiaVinsPAC2:wine" [ label = "rdfs:subClassOf" ];
-	"OntologiaVinsPAC2:Tempranillo" -> "OntologiaVinsPAC2:wine" [ label = "rdfs:subClassOf" ];
-	"OntologiaVinsPAC2:Montsant_Red" -> "OntologiaVinsPAC2:wine" [ label = "rdfs:subClassOf" ];
-	"OntologiaVinsPAC2:Mencia" -> "OntologiaVinsPAC2:wine" [ label = "rdfs:subClassOf" ];
-	"OntologiaVinsPAC2:Cava" -> "OntologiaVinsPAC2:wine" [ label = "rdfs:subClassOf" ];
-	"OntologiaVinsPAC2:Rioja_Red" -> "OntologiaVinsPAC2:wine" [ label = "rdfs:subClassOf" ];
-	"OntologiaVinsPAC2:Priorat_Red" -> "OntologiaVinsPAC2:wine" [ label = "rdfs:subClassOf" ];
-	"OntologiaVinsPAC2:region" -> "OntologiaVinsPAC2:country" [ label = "rdfs:subClassOf" ];
-	"OntologiaVinsPAC2:Rioja_White" -> "OntologiaVinsPAC2:wine" [ label = "rdfs:subClassOf" ];
-	"OntologiaVinsPAC2:Sparkling" -> "OntologiaVinsPAC2:wine" [ label = "rdfs:subClassOf" ];
-	"OntologiaVinsPAC2:Monastrell" -> "OntologiaVinsPAC2:wine" [ label = "rdfs:subClassOf" ];
-	"OntologiaVinsPAC2:Red" -> "OntologiaVinsPAC2:wine" [ label = "rdfs:subClassOf" ];
-	"OntologiaVinsPAC2:Albarino" -> "OntologiaVinsPAC2:wine" [ label = "rdfs:subClassOf" ];
-	"OntologiaVinsPAC2:Chardonnay" -> "OntologiaVinsPAC2:wine" [ label = "rdfs:subClassOf" ];
-	"OntologiaVinsPAC2:Verdejo" -> "OntologiaVinsPAC2:wine" [ label = "rdfs:subClassOf" ];
-	"OntologiaVinsPAC2:Grenache" -> "OntologiaVinsPAC2:wine" [ label = "rdfs:subClassOf" ];
-	"OntologiaVinsPAC2:Sauvignon_Blanc" -> "OntologiaVinsPAC2:wine" [ label = "rdfs:subClassOf" ];
-	"OntologiaVinsPAC2:Toro_Red" -> "OntologiaVinsPAC2:wine" [ label = "rdfs:subClassOf" ];
-	"OntologiaVinsPAC2:Cabernet_Sauvignon" -> "OntologiaVinsPAC2:wine" [ label = "rdfs:subClassOf" ];
-	"OntologiaVinsPAC2:NA" -> "OntologiaVinsPAC2:wine" [ label = "rdfs:subClassOf" ];
-	"OntologiaVinsPAC2:Ribera_Del_Duero_Red" -> "OntologiaVinsPAC2:wine" [ label = "rdfs:subClassOf" ];
-	"OntologiaVinsPAC2:Pedro_Ximenez" -> "OntologiaVinsPAC2:wine" [ label = "rdfs:subClassOf" ];
-	"OntologiaVinsPAC2:Sherry" -> "OntologiaVinsPAC2:wine" [ label = "rdfs:subClassOf" ];
+node [shape = rectangle, color="black"]; "OntologiaVinsPAC21:Chardonnay" "OntologiaVinsPAC21:Sherry" "OntologiaVinsPAC21:Cava" "OntologiaVinsPAC21:Syrah" "OntologiaVinsPAC21:Sparkling" "OntologiaVinsPAC21:Red" "OntologiaVinsPAC21:wine" "OntologiaVinsPAC21:Tempranillo" "OntologiaVinsPAC21:Toro_Red" "OntologiaVinsPAC21:Montsant_Red" "OntologiaVinsPAC21:Ribera_Del_Duero_Red" "OntologiaVinsPAC21:country" "OntologiaVinsPAC21:Monastrell" "OntologiaVinsPAC21:Rioja_White" "OntologiaVinsPAC21:Grenache" "OntologiaVinsPAC21:Pedro_Ximenez" "OntologiaVinsPAC21:Cabernet_Sauvignon" "OntologiaVinsPAC21:Sauvignon_Blanc" "OntologiaVinsPAC21:Priorat_Red" "OntologiaVinsPAC21:region" "OntologiaVinsPAC21:Albarino" "OntologiaVinsPAC21:Mencia" "OntologiaVinsPAC21:NA" "OntologiaVinsPAC21:Rioja_Red" "OntologiaVinsPAC21:Verdejo" ; /*classes style*/
+	"OntologiaVinsPAC21:Mencia" -> "OntologiaVinsPAC21:wine" [ label = "rdfs:subClassOf" ];
+	"OntologiaVinsPAC21:Pedro_Ximenez" -> "OntologiaVinsPAC21:wine" [ label = "rdfs:subClassOf" ];
+	"OntologiaVinsPAC21:Ribera_Del_Duero_Red" -> "OntologiaVinsPAC21:wine" [ label = "rdfs:subClassOf" ];
+	"OntologiaVinsPAC21:Rioja_White" -> "OntologiaVinsPAC21:wine" [ label = "rdfs:subClassOf" ];
+	"OntologiaVinsPAC21:Tempranillo" -> "OntologiaVinsPAC21:wine" [ label = "rdfs:subClassOf" ];
+	"OntologiaVinsPAC21:Albarino" -> "OntologiaVinsPAC21:wine" [ label = "rdfs:subClassOf" ];
+	"OntologiaVinsPAC21:Priorat_Red" -> "OntologiaVinsPAC21:wine" [ label = "rdfs:subClassOf" ];
+	"OntologiaVinsPAC21:Toro_Red" -> "OntologiaVinsPAC21:wine" [ label = "rdfs:subClassOf" ];
+	"OntologiaVinsPAC21:Verdejo" -> "OntologiaVinsPAC21:wine" [ label = "rdfs:subClassOf" ];
+	"OntologiaVinsPAC21:Red" -> "OntologiaVinsPAC21:wine" [ label = "rdfs:subClassOf" ];
+	"OntologiaVinsPAC21:Syrah" -> "OntologiaVinsPAC21:wine" [ label = "rdfs:subClassOf" ];
+	"OntologiaVinsPAC21:Sherry" -> "OntologiaVinsPAC21:wine" [ label = "rdfs:subClassOf" ];
+	"OntologiaVinsPAC21:Grenache" -> "OntologiaVinsPAC21:wine" [ label = "rdfs:subClassOf" ];
+	"OntologiaVinsPAC21:Cabernet_Sauvignon" -> "OntologiaVinsPAC21:wine" [ label = "rdfs:subClassOf" ];
+	"OntologiaVinsPAC21:NA" -> "OntologiaVinsPAC21:wine" [ label = "rdfs:subClassOf" ];
+	"OntologiaVinsPAC21:Rioja_Red" -> "OntologiaVinsPAC21:wine" [ label = "rdfs:subClassOf" ];
+	"OntologiaVinsPAC21:Monastrell" -> "OntologiaVinsPAC21:wine" [ label = "rdfs:subClassOf" ];
+	"OntologiaVinsPAC21:Chardonnay" -> "OntologiaVinsPAC21:wine" [ label = "rdfs:subClassOf" ];
+	"OntologiaVinsPAC21:Sparkling" -> "OntologiaVinsPAC21:wine" [ label = "rdfs:subClassOf" ];
+	"OntologiaVinsPAC21:region" -> "OntologiaVinsPAC21:country" [ label = "rdfs:subClassOf" ];
+	"OntologiaVinsPAC21:Montsant_Red" -> "OntologiaVinsPAC21:wine" [ label = "rdfs:subClassOf" ];
+	"OntologiaVinsPAC21:Cava" -> "OntologiaVinsPAC21:wine" [ label = "rdfs:subClassOf" ];
+	"OntologiaVinsPAC21:Sauvignon_Blanc" -> "OntologiaVinsPAC21:wine" [ label = "rdfs:subClassOf" ];
 
 }
